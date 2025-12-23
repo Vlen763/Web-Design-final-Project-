@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
 <body>
+
     <!--Header-->
     <header id="mainHeader">
         <div class="logo">
@@ -34,38 +37,607 @@
     <!--Home Section-->
     <section id="home" class="hero">
         <div class="hero-slider">
-            <div class="slide active" style="background-image: url('https://1drv.ms/i/c/c16d2378c7b78575/IQDjRpCffO0RToUV7VmB-0gFAeR1409n9mNNDRqVTpwaYu8?e=G4pw5A')">
+            <div class="slide active" style="background-image: url('https://tripjive.com/wp-content/uploads/2024/01/Best-authentic-Khmer-cuisine-beyond-fish-amok-and-lok-lak.jpg')">
                 <div class="slide-content">
                     <h1>Authentic Cambodian Cuisine</h1>
                     <p>Experience the rich flavors and traditions of Cambodia at KiRi KaN Restaurant & Cafe.</p>
                 </div>
-                <div class="slide" style="background-image: url('https://i.pinimg.com/736x/6f/e1/11/6fe111d94ca6ab10e81c9bd96328a82d.jpg')">
-                    <div class="slide-content">
-                        <h1>Artisan Coffeee & Tea</h1>
-                        <p>Enjoy our carefully crafted selection of coffee and tea, made from the finest ingredients.</p>
-                    </div>
+            </div>
+            <div class="slide" style="background-image: url('https://i.pinimg.com/736x/33/0c/30/330c305bcb959a4517041e43edae0c31.jpg')">
+                <div class="slide-content">
+                    <h1>Artisan Coffeee & Tea</h1>
+                    <p>Enjoy our carefully crafted selection of coffee and tea, made from the finest ingredients.</p>
                 </div>
             </div>
+            
+        </div>
 
-            <div class="hero-content">
+        <div class="hero-content">
+            <div class="hero-tagline">
                 <h2>Where Traditional Cambodian Flavors Meet Modern Comfort</h2>
-                <div class="hero-btns">
-                    <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
-                    <a href="#booking" class="btn btn-secondary">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="section-subtitle">More than just a restaurant - a destination for food, coffee, and community</p>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://i.pinimg.com/1200x/84/bd/f4/84bdf4f31f2b1561dfe8d5a0be94ea57.jpg" alt="About KiRi KaN">
+                </div>
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>We pride ourselves on using fresh, locally sourced ingredients to create dishes that are both delicious and true to Cambodian. From classic favorites to innovative creations, our menu offers something for everyone.</p>
+                    <h3>Our Coffee & Tea</h3>
+                    <p>In addition to our food offerings, we also feature a carefully curated selection of artisan coffee and tea. Whether you're looking for a robust espresso or a soothing herbal tea, our beverage menu has you covered.</p>
+
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Fresh Ingredients</h4>
+                            <p>We source locally grown produce and spices daily</p>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <h4>Community Focused</h4>
+                            <p>Supporting local farmers and artisans</p>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-award"></i>
+                            <h4>Award Winning</h4>
+                            <p>Recognized for authentic Khmer cuisine</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section">
-        <!-- About content goes here -->
-         <h2>About Us</h2>
+    <!--Menu Section-->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Restaurant Menu</h2>
+                <p class="section-subtitle">Authentic Cambodian dishes made with traditional recipes</p>
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="all">All Dishes</button>
+                    <button class="menu-tab" data-category="khmer">Khmer Specialties</button>
+                    <button class="menu-tab" data-category="noodles">Noodles & Rice</button>
+                    <button class="menu-tab" data-category="vegetarian">Vegetarian</button>
+                </div>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-item" data-category="khmer">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/1200x/b1/61/26/b16126b63e2efa0dfc10be46bfaea99b.jpg" alt="Amok Trey">
+                        <span class="menu-badge popular"><i class="fas fa-fire"></i> Popular</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Amok Trey <span class="menu-item-price">$2.50</span></h4>
+                            <p class="menu-item-desc">Steamed fish curry with coconut milk and Khmer spices</p>
+                        </div>
+                        <div class="menu-item-footer">
+                            <div class="rating">⭐⭐⭐⭐⭐ (48)</div>
+                            <button class="add-to-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="khmer">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/ee/fd/7e/eefd7e864fb3215123454d669251f573.jpg" alt="Samlor Korko">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Samlor Korko <span class="menu-item-price">$2.00</span></h4>
+                            <p class="menu-item-desc">Hearty Khmer soup with vegetables, herbs and choice of meat</p>
+                        </div>
+                        <div class="menu-item-footer">
+                            <div class="rating">⭐⭐⭐⭐ (36)</div>
+                            <button class="add-to-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="khmer">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/1200x/3c/bb/df/3cbbdfcd4a1a2c15eb318ce3a9a44e43.jpg" alt="Beef Lok Lak">
+                        <span class="menu-badge chef"><i class="fas fa-chef-hat"></i> Chef's Special</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Beef Lok Lak <span class="menu-item-price">$4.25</span></h4>
+                            <p class="menu-item-desc">Stir-fried beef with Kampot pepper sauce, rice and egg</p>
+                        </div>
+                        <div class="menu-item-footer">
+                            <div class="rating">⭐⭐⭐⭐⭐ (52)</div>
+                            <button class="add-to-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="noodles">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/1200x/e2/3c/7e/e23c7ec95d895acda117fcacb8bed4b4.jpg" alt="Num Banh Chok">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Num Banh Chok <span class="menu-item-price">$2.50</span></h4>
+                            <p class="menu-item-desc">Rice noodles with fish-based green curry and vegetables</p>
+                        </div>
+                        <div class="menu-item-footer">
+                            <div class="rating">⭐⭐⭐⭐⭐ (41)</div>
+                            <button class="add-to-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="vegetarian">
+                    <div class="menu-item-img">
+                        <img src="food.jpg" alt="Vegetarian Dish">
+                        <span class="menu-badge veg"><i class="fas fa-leaf"></i> Vegetarian</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Tuk kroeung <span class="menu-item-price">$3.00</span></h4>
+                            <p class="menu-item-desc">Cambodian dip made from prahok, cooked fish, and vegetables</p>
+                        </div>
+                        <div class="menu-item-footer">
+                            <div class="rating">⭐⭐⭐⭐ (28)</div>
+                            <button class="add-to-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="noodles">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/b8/87/16/b887166696626430f55d67dcede33632.jpg" alt="Bai Sach Chrouk">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Bai Sach Chrouk <span class="menu-item-price">$2.00</span></h4>
+                            <p class="menu-item-desc">Grilled pork with rice, pickled vegetables and clear broth</p>
+                        </div>
+                        <div class="menu-item-footer">
+                            <div class="rating">⭐⭐⭐⭐ (29)</div>
+                            <button class="add-to-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-cta">
+                <p>View our complete food menu with over 40 traditional Cambodian dishes</p>
+                <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> Download Full Menu (PDF)</a>
+            </div>
+        </div>
     </section>
 
-    <section id="menu" class="section">
-        <!-- Menu content goes here -->
-         <h2>Our Menu</h2>
+    <!-- COFFEE & TEA SECTION -->
+    <section id="coffee" class="coffee-section">
+        <div class="container">
+            <h2>Coffee & Tea Menu</h2>
+            <p class="section-subtitle">Specialty beverages to complement your meal or enjoy on their own</p>
+            
+            <div class="coffee-grid">
+                <div class="coffee-category">
+                    <h3><i class="fas fa-coffee"></i> Coffee Specialties</h3>
+                    <div class="beverage-list">
+                        <div class="beverage-item">
+                            <div class="beverage-info">
+                                <h4>Cambodian Iced Coffee <span class="beverage-price">$2.50</span></h4>
+                                <p>Traditional strong brew with sweetened condensed milk</p>
+                            </div>
+                            <span class="beverage-badge hot-cold"><i class="fas fa-temperature-high"></i> <i class="fas fa-snowflake"></i></span>
+                        </div>
+                        
+                        <div class="beverage-item">
+                            <div class="beverage-info">
+                                <h4>Phnom Penh Latte <span class="beverage-price">$3.00</span></h4>
+                                <p>Espresso with coconut milk and palm sugar syrup</p>
+                            </div>
+                            <span class="beverage-badge hot"><i class="fas fa-mug-hot"></i> Hot Only</span>
+                        </div>
+                        
+                        <div class="beverage-item">
+                            <div class="beverage-info">
+                                <h4>Angkor Mocha <span class="beverage-price">$3.25</span></h4>
+                                <p>Dark chocolate, espresso, and a hint of cinnamon</p>
+                            </div>
+                            <span class="beverage-badge hot-cold"><i class="fas fa-temperature-high"></i> <i class="fas fa-snowflake"></i></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="coffee-category">
+                    <h3><i class="fas fa-mug-hot"></i> Traditional Teas</h3>
+                    <div class="beverage-list">
+                        <div class="beverage-item">
+                            <div class="beverage-info">
+                                <h4>Lemongrass Ginger Tea <span class="beverage-price">$2.00</span></h4>
+                                <p>Fresh lemongrass and ginger infusion, naturally caffeine-free</p>
+                            </div>
+                            <span class="beverage-badge hot"><i class="fas fa-mug-hot"></i> Hot Only</span>
+                        </div>
+                        
+                        <div class="beverage-item">
+                            <div class="beverage-info">
+                                <h4>Jasmine Green Tea <span class="beverage-price">$1.75</span></h4>
+                                <p>Premium jasmine-scented green tea leaves</p>
+                            </div>
+                            <span class="beverage-badge hot-cold"><i class="fas fa-temperature-high"></i> <i class="fas fa-snowflake"></i></span>
+                        </div>
+                        
+                        <div class="beverage-item">
+                            <div class="beverage-info">
+                                <h4>Kampot Pepper Mint Tea <span class="beverage-price">$2.25</span></h4>
+                                <p>Unique blend of fresh mint with a hint of Kampot pepper</p>
+                            </div>
+                            <span class="beverage-badge hot"><i class="fas fa-mug-hot"></i> Hot Only</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="coffee-category">
+                    <h3><i class="fas fa-glass-whiskey"></i> Cold Beverages</h3>
+                    <div class="beverage-list">
+                        <div class="beverage-item">
+                            <div class="beverage-info">
+                                <h4>Fresh Sugar Cane Juice <span class="beverage-price">$1.50</span></h4>
+                                <p>Freshly pressed sugar cane with lime</p>
+                            </div>
+                            <span class="beverage-badge cold"><i class="fas fa-snowflake"></i> Cold Only</span>
+                        </div>
+                        
+                        <div class="beverage-item">
+                            <div class="beverage-info">
+                                <h4>Cambodian Iced Tea <span class="beverage-price">$1.75</span></h4>
+                                <p>Black tea with condensed milk, served over ice</p>
+                            </div>
+                            <span class="beverage-badge cold"><i class="fas fa-snowflake"></i> Cold Only</span>
+                        </div>
+                        
+                        <div class="beverage-item">
+                            <div class="beverage-info">
+                                <h4>Fresh Coconut Water <span class="beverage-price">$2.00</span></h4>
+                                <p>Served in the coconut with optional rum (additional charge)</p>
+                            </div>
+                            <span class="beverage-badge cold"><i class="fas fa-snowflake"></i> Cold Only</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cafe-features">
+                <div class="cafe-feature">
+                    <i class="fas fa-wifi"></i>
+                    <h4>Free High-Speed WiFi</h4>
+                    <p>Perfect for remote work or studying</p>
+                </div>
+                <div class="cafe-feature">
+                    <i class="fas fa-plug"></i>
+                    <h4>Power Outlets</h4>
+                    <p>Available at every table</p>
+                </div>
+                <div class="cafe-feature">
+                    <i class="fas fa-book"></i>
+                    <h4>Reading Corner</h4>
+                    <p>Books and magazines available</p>
+                </div>
+                <div class="cafe-feature">
+                    <i class="fas fa-paw"></i>
+                    <h4>Pet-Friendly</h4>
+                    <p>Outdoor seating for you and your pet</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <script src="script.js"></script>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <p class="section-subtitle">Explore our restaurant & cafe's visual journey</p>
+
+            <div class="gallery-filters">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="restaurant">Restaurant</button>
+                <button class="gallery-filter" data-filter="cafe">Cafe</button>
+                <button class="gallery-filter" data-filter="food">Food</button> 
+                <button class="gallery-filter" data-filter="drinks">Drinks</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="https://i.pinimg.com/736x/2b/09/7d/2b097d44500abe35df10525978a13ccf.jpg" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Cozy Dining Area</h4>
+                            <p>Experience our warm and inviting restaurant ambiance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cafe">
+                    <img src="https://i.pinimg.com/1200x/d0/dd/63/d0dd63bf43207f143cec795d2ebaa1a0.jpg" alt="Cafe Seating">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Relaxing Cafe Space</h4>
+                            <p>Perfect spot to enjoy your coffee and unwind.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.Hjdyp9qHHulnPHFcPl0VwAHaEO?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Delicious Dish">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Authentic Cambodian Cuisine</h4>
+                            <p>Savor the flavors of our traditional dishes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Refreshing Drink">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Artisan Beverages</h4>
+                            <p>Enjoy our selection of specialty coffee and tea.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="https://i.pinimg.com/1200x/75/91/dd/7591dd82cca79bdaf0f3b5d9fefc2703.jpg" alt="Evening Ambiance">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Evening Ambiance</h4>
+                            <p>Experience the cozy atmosphere during dinner hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--booking section-->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="booking-header">
+                <h2>Book a Table</h2>
+                <p class="section-subtitle">Reserve your spot at KiRi KaN Restaurant & Cafe</p>
+            </div>
+
+            <div class="booking-options">
+                <div class="booking-card">
+                    <div class="booking-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Restaurant Booking</h3>
+                    <p>For lunch or dinner reservations in our restaurant.</p>
+                    <ul class="booking-features">
+                        <li><i class="fas fa-check"></i> Table for 2-8 people</li>
+                        <li><i class="fas fa-check"></i> Dinner reservation from 5:00 PM</li>
+                        <li><i class="fas fa-check"></i> Special occasions accommodated</li>
+                    </ul>
+                    <button class="btn book-restaurant-btn">Book Restaurant Table</button>
+                </div>
+
+                <div class="booking-card">
+                    <div class="booking-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Cafe Seating</h3>
+                    <p>For coffee, light meals, or remote work in our cafe area.</p>
+                    <ul class="booking-features">
+                        <li><i class="fas fa-check"></i> Individual or group seating</li>
+                        <li><i class="fas fa-check"></i> Power outlets at every table</li>
+                        <li><i class="fas fa-check"></i> Free high-speed Wi-Fi</li>
+                    </ul>
+                    <button class="btn btn-accent book-cafe-btn">Book Cafe Seating</button>
+                </div>
+
+                <div class="booking-card">
+                    <div class="booking-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Event & Groups</h3>
+                    <p>For private events, parties, or large group bookings</p>
+                    <ul class="booking-features">
+                        <li><i class="fas fa-check"></i> Private room available</li>
+                        <li><i class="fas fa-check"></i> Customized menu options</li>
+                        <li><i class="fas fa-check"></i> Dedicated event coordinator</li>
+                    </ul>
+                    <button class="btn book-event-btn">Book Event & Groups</button>
+                </div>
+            </div>
+
+            <!-- Booking Form-->
+            <div class="booking-form-container" id="bookingForm">
+                <div class="booking-form-header">
+                    <h3>Booking Details</h3>
+                    <button class="close-form-btn" id="closeFormBtn">&times;</button>
+                </div>
+                <form id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingType">Booking Type *</label>
+                            <select id="bookingType" required>
+                                <option value="">Select type</option>
+                                <option value="restaurant">RestaurantDining</option>
+                                <option value="cafe">Cafe Seating</option>
+                                <option value="event">Special Event</option>
+                                <option value="takeaway">Takeaway Order</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bookingDate">Date *</label>
+                            <input type="date" id="bookingDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bookingTime">Time *</label>
+                            <select id="bookingTime" required>
+                                <option value="">Select time</option>
+                                <optgroup label="Morning">
+                                    <option value="07:00">7:00 AM</option>
+                                    <option value="08:00">8:00 AM</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                </optgroup>
+                                <optgroup label="Lunch">
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                </optgroup>
+                                <optgroup label="Dinner">
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guestCount">Number of Guests *</label>
+                            <select id="guestCount" required>
+                                <option value="">Select number</option>
+                                <option value="1">1 people</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5">5 people</option>
+                                <option value="6">6 people</option>
+                                <option value="7">7+ people</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerName">Full Name *</label>
+                            <input type="text" id="customerName" placeholder="Your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerPhone">Phone Number *</label>
+                            <input type="tel" id="customerPhone" placeholder="+855 or 0xx format" required>
+                            <small class="form-hint">Cambodian format: +855 123 456 789 or 012 345 678</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" placeholder="Any special requests or dietary requirements"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn submit-booking-btn">Submit Booking</button>
+                        <button type="button" class="btn btn-outline" id="cancelBookingBtn">Cancel</button>
+                    </div>
+                </form>
+
+                <div class="booking-success" id="bookingSuccess">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Booking successfully!</h3>
+                    <p>Thank you for choosing KiRi KaN Restaurant & Cafe. We look forward to serving you!</p>
+                    <button class="btn" id="newBookingBtn">Make Another Booking</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact&footer -->
+     <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-utensils"></i>
+                        <div>
+                            <h3>KiRi KaN</h3>
+                            <p class="logo-subtitle">Restaurant & Cafe</p>
+                        </div>
+                    </div>
+                    <p>Experience authentic Cambodian cuisine and specialty coffees in a warm, welcoming atmosphere.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#" title="Google Maps"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Street Name, Phnom Penh, Cambodia</p>
+                        <p><i class="fas fa-phone"></i> +855 12 345 678</p>
+                        <p><i class="fas fa-envelope"></i> info@kirikan.com</p>
+                        <p><i class="fas fa-clock"></i> Open Daily: 7:00 AM - 9:00 PM</p>
+                    </div>
+
+                    <div class="delivery-info">
+                        <h5>Delivery Available</h5>
+                        <p>Order through our partners:</p>
+                        <div class="delivery-partners">
+                            <span class="partner-badge">FoodPanda</span>
+                            <span class="partner-badge">Grab</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="#about"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="#menu"><i class="fas fa-chevron-right"></i> Food Menu</a>
+                        <a href="#coffee"><i class="fas fa-chevron-right"></i> Coffee & Tea</a>
+                        <a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a>
+                        <a href="#booking"><i class="fas fa-chevron-right"></i> Reservation</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Careers</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+
+                    <div class="payment-methods">
+                        <h5>Payment Methods</h5>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                            <i class="fas fa-money-bill-wave" title="Cash"></i>
+                            <i class="fas fa-qrcode" title="Mobile Payment"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 KiRi KaN Restaurant & Café. All rights reserved.</p>
+            </div>
+        </div>
+     </footer>
+
+     <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+    <script defer src="script.js"></script>
+
 </body>
 </html>
